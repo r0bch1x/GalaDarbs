@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<input type="number" class="form-control" id="operand1">
+				<select class="form-control" id="operator1">
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">×</option>
+					<option value="/">÷</option>
+				</select>
+				<input type="number" class="form-control" id="operand2">
+				<select class="form-control" id="operator2">
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">×</option>
+					<option value="/">÷</option>
+				</select>
+				<input type="number" class="form-control" id="operand3">
+				<button class="btn btn-primary" onclick="calculate()">Calculate</button>
+				<div class="result"></div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function calculate() {
+			let operand1 = parseFloat(document.querySelector('#operand1').value) || 0;
+			let operand2 = parseFloat(document.querySelector('#operand2').value) || 0;
+			let operand3 = parseFloat(document.querySelector('#operand3').value) || 0;
+			let operator1 = document.querySelector('#operator1').value;
+			let operator2 = document.querySelector('#operator2').value;
+			let result = null;
+
+			if (operator1 === '+') {
+				result = operand1 + operand2;
+			} else if (operator1 === '-') {
+				result = operand1 - operand2;
+			} else if (operator1 === '*') {
+				result = operand1 * operand2;
+			} else if (operator1 === '/') {
+				result = operand1 / operand2;
+			}
+
+			if (operator2 === '+') {
+				result = result + operand3;
+			} else if (operator2 === '-') {
+				result = result - operand3;
+			} else if (operator2 === '*') {
+				result = result * operand3;
+			} else if (operator2 === '/') {
+				result = result / operand3;
+			}
+
+			document.querySelector('.result').textContent = result;
+		}
+	</script>
+</body>
+</html>

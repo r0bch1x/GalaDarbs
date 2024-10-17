@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atsauksmes</title>
+    <link rel="stylesheet" type="text/css" href="formstyle.css">
+    <script src="formscript.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Sākumlapa</a></li>
+          <li><a href="about.html">Par grāmatām</a></li>
+          <li><a href="form.html">Atsauksmes</a></li>
+        </ul>
+    </nav>
+</header>
+    <div id="form-section">
+        <form id="review-form">
+            <label for="first-name">Vārds:</label>
+            <input type="text" id="first-name" required>
+            <label for="last-name">Uzvārds:</label>
+            <input type="text" id="last-name" required>
+            <label for="book-select">Izvēlies grāmatu:</label>
+            <select id="book-select" required>
+                <option value="" disabled selected>---Grāmatas---</option>
+                <option value="book1">Harijs Poters un Filozofu akmens</option>
+                <option value="book2">Gaiļa ābece</option>
+                <option value="book3">Grega dienasgrāmata</option>
+                <option value="book3">Kaķīša dzirnavas</option>
+                <option value="book3">Aušvicas tetovētājs</option>
+            </select>
+            <label for="review">Review:</label>
+            <textarea id="review" rows="4" required></textarea>
+            <button type="submit">Iesniegt</button>
+        </form>
+    </div>
+    <div id="review-table-section">
+        <h2>Iesniegtās atsauksmes</h2>
+        <table id="review-table">
+            <thead>
+                <tr>
+                    <th>Vārds</th>
+                    <th>Uzvārds</th>
+                    <th>Grāmatas nosaukums</th>
+                    <th>Atsauksme</th>
+                    <th>Darbība</th>
+                </tr>
+            </thead>
+            <tbody id="review-table-body">
+            </tbody>
+        </table>
+        <button id="clear-all-button">Nodzēst datus</button>
+    </div>
+    <button id="scrollToTopButton" onclick="scrollToTop()">^</button>
+</body>
+</html>

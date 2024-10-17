@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grāmatas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sākumlapa</a></li>
+                <li><a href="about.html">Par grāmatām</a></li>
+                <li><a href="form.html">Atsauksmes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="book-table">
+      <div id="filter-section">
+        <label for="genre-filter">Filtrēt žanrus:</label>
+        <select id="genre-filter">
+            <option value="all">Visi žanri</option>
+            <option value="Fantāzijas literatūra">Fantāzijas literatūra</option>
+            <option value="Romāns">Romāns</option>
+            <option value="Mācības">Mācības</option>
+            <option value="Daiļliteratūra">Daiļliteratūra</option>
+        </select>
+    </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Grāmatas attēls</th>
+                    <th>Grāmatas nosaukums</th>
+                    <th>Grāmatas autors</th>
+                    <th>Grāmatas žanrs</th>
+                </tr>
+            </thead>
+            <tbody id="book-table-body">
+              <tr>
+                <td><img src="book1.jpg" alt="Book 1" width="200" height="200"></td>     
+                <td>Harijs Poters un Filozofu akmens</td>
+                <td>Džoanna K. Roulinga</td>
+                <td>Fantāzijas literatūra</td>
+              </tr>
+              <tr>
+                <td><img src="book2.jpg" alt="Book 2" width="200" height="200"></td>                
+                <td>Gaiļa ābece</td>
+                <td>Gita Andersone</td>
+                <td>Mācības</td>
+              </tr>
+              <tr>
+                <td><img src="book3.jpg" alt="Book 3" width="200" height="200"></td>
+                <td>Grega dienasgrāmata</td>
+                <td>Džefs Kinnijs</td>
+                <td>Romāns</td>
+              </tr>
+              <tr>
+                <td><img src="book4.jpg" alt="Book 4" width="200" height="200"></td>
+                <td>Kaķīša dzirnavas</td>
+                <td>Kārlis Skalbe</td>
+                <td>Daiļliteratūra</td>
+              </tr>
+              <tr>
+                <td><img src="book5.jpg" alt="Book 5" width="200" height="200"></td>
+                <td>Aušvicas tetovētājs</td>
+                <td>Hetere Morisa</td>
+                <td>Romāns</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <button id="scrollToTopButton" onclick="scrollToTop()">^</button>
+</body>
+</html>

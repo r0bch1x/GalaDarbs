@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style3.css">
+  <script src="script3.js"></script>
+  <title>PORTFOLIO</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <center>
+          <li><a href="index.html">SĀKUMLAPA</a></li>
+          <li><a href="index2.html">LAIKA LĪNIJA</a></li>
+          <li><a href="index3.html">PORTFOLIO</a></li>
+          <li><a href="index4.html">MINI-SPĒLE</a></li>
+          <li><a href="index5.html">PAR PROJEKTU</a></li>
+        </center>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search project...">
+  </div>
+
+  <div class="category-buttons">
+    <button class="category-button active" data-category="all">Visi</button>
+    <button class="category-button" data-category="school">Skola</button>
+    <button class="category-button" data-category="practice">Prakse</button>
+  </div>
+
+  <!-- skola -->
+  <div class="project-container">
+    <div class="project-card" data-category="school">
+      <img src="kalkulators.png" alt="Project 1" class="project-image">
+      <div class="project-details">
+        <h2>S-1. Kalkulators.</h2>
+        <p>Kalkulators ar 3 ievades laukiem un 2 darbībām.</p>
+        <a href="kalkulators/">Open Project</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="school">
+      <img src="veidlapa.png" alt="Project 2" class="project-image">
+      <div class="project-details">
+        <h2>S-2. Veidlapa.</h2>
+        <p>Veidlapā tiek pieprasīts personas vārds, uzvārds, epasts un ziņojums. Uzspiežot "iesniegt" pogu, tiek aizvests uz jaunu lapu, kur tabulā tiek parādīti ievadītie dati.</p>
+        <a href="veidlapa/">Open Project</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="school">
+      <img src="kartis.png" alt="Project 3" class="project-image">
+      <div class="project-details">
+        <h2>S-3. Objektu kārtis.</h2>
+        <p>Izveidoju 3 kartiņas, kuras ir iespējams dzēst vai rediģēt. Kā arī ir iespējams atrast konkrēto kārti. Apakšā ir poga, lai pivienotu kartiņu un poga, kas pasaka, kas jauns šajā lapā.</p>
+        <a href="kartis/">Open Project</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="school">
+      <img src="merklapa.png" alt="Project 4" class="project-image">
+      <div class="project-details">
+        <h2>S-4. Mērķlapa.</h2>
+        <p>Šajā projektā jau nedaudz bija nepieciešams iesvīst... Šeit es veidoju tabulas par grāmatām. Kā arī iekļāvu ievades formu un aprakstus par grāmatām.</p>
+        <a href="merklapa/">Open Project</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="school">
+      <img src="Gala_darbs.png" alt="Project 5" class="project-image">
+      <div class="project-details">
+        <h2>S-5. Gala darbs.</h2>
+        <p>Ja esi nonācis jau tik tālu, tad esi nedaudz jau apskatījis gala darbu!</p>
+      </div>
+    </div>
+
+    <!-- prakse -->
+    <div class="project-card" data-category="practice">
+        <img src="Dev.jpg" alt="Project 5" class="project-image">
+        <div class="project-details">
+          <h2>P-1. Pirmā nedēļa.</h2>
+          <p>Attēla apstrāde.</p>
+          <p>Diemžēl pazaudēju mapi ar prakses darbiem, nevarēju ielikt :(</p>
+        </div>
+    </div>
+
+    <div class="project-card" data-category="practice">
+        <img src="Dev.jpg" alt="Project 5" class="project-image">
+        <div class="project-details">
+          <h2>P-1. Otrā nedēļa.</h2>
+          <p>Attēla apstrāde ar CANVAS pikseļu manipulāciju.</p>
+          <p>Diemžēl pazaudēju mapi ar prakses darbiem, nevarēju ielikt :(</p>
+        </div>
+    </div>
+
+    <div class="project-card" data-category="practice">
+        <img src="Dev.jpg" alt="Project 5" class="project-image">
+        <div class="project-details">
+          <h2>P-1. Trešā nedēļa.</h2>
+          <p>Darāmo darbu saraksts jeb "To-do list".</p>
+          <p>Diemžēl pazaudēju mapi ar prakses darbiem, nevarēju ielikt :(</p>
+        </div>
+    </div>
+
+    <div class="project-card" data-category="practice">
+        <img src="Dev.jpg" alt="Project 5" class="project-image">
+        <div class="project-details">
+          <h2>P-1. Ceturtā nedēļa.</h2>
+         <p>Darāmo darbu saraksts ar AJAX.</p>
+         <p>Diemžēl pazaudēju mapi ar prakses darbiem, nevarēju ielikt :(</p>
+        </div>
+  </div>
+
+    <div class="project-card" data-category="practice">
+        <img src="Dev.jpg" alt="Project 5" class="project-image">
+        <div class="project-details">
+          <h2>P-1. Piektā nedēļa.</h2>
+        <p>Darāmo darbu saraksts ar AJAX un BOOTSTRAP.</p>
+        <p>Diemžēl pazaudēju mapi ar prakses darbiem, nevarēju ielikt :(</p>
+        </div>
+    </div>
+
+    <div class="project-card" data-category="practice">
+      <img src="Dev.jpg" alt="Project 5" class="project-image">
+      <div class="project-details">
+        <h2>P-1. Sestā nedēļa.</h2>
+       <p>Gala rezultāts darāmo darbu sarakstam.</p>
+       <p>Diemžēl pazaudēju mapi ar prakses darbiem, nevarēju ielikt :(</p>
+      </div>
+    </div>
+  </div>
+
+  <button id="scroll-to-top-button" title="Scroll to Top">^</button>
+</body>
+</html>

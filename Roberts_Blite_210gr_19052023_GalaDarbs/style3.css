@@ -1,0 +1,145 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header {
+    background-color: #293b5f;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .search-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #search-input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  .category-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .category-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #293b5f;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .category-button.active {
+    background-color: #293b5f;
+    color: #fff;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .project-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 600px;
+    max-width: 90%;
+  }
+  
+  .project-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .project-details {
+    flex-grow: 1;
+  }
+  
+  .project-details h2 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+  }
+  
+  .project-details p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .project-details a {
+    display: block;
+    margin-top: 10px;
+    color: #293b5f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project-details a:hover {
+    text-decoration: underline;
+  }
+  
+  #scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: #293b5f;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #scroll-to-top-button img {
+    width: 20px;
+    height: 20px;
+  }

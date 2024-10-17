@@ -1,0 +1,40 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="indexstyle.css">
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="name">Vārds, uzvārds:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">E-pasts:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="message">Ziņojums:</label>
+      <textarea id="message" name="message" required></textarea>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    <script>
+      const form = document.getElementById('myForm');
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const formData = new FormData(form);
+        const data = {};
+        for (let [key, value] of formData.entries()) {
+          data[key] = value;
+        }
+        const allData = JSON.parse(localStorage.getItem('formData')) || [];
+        allData.push(data);
+        localStorage.setItem('formData', JSON.stringify(allData));
+        window.location.href = 'display.html';
+      });
+    </script>
+  </body>
+</html>

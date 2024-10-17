@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.book-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.book-details {
+  flex: 1;
+}
+
+.book-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.book-author {
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+
+.book-description {
+  margin: 0;
+}
+
+.book-buy-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #3f51b5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.book-buy-button:hover {
+  background-color: #2c3e87;
+}
+
+@media (max-width: 600px) {
+  .book-container {
+    flex-direction: column;
+  }
+
+  .book-image {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .book-buy-button {
+    display: block;
+  }
+}
+
+/* Header */
+header {
+  background-color: #3f3f3f;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Highlight Active Section */
+nav a.active {
+	color: #fbff00; /* Replace with the desired color */
+  }
+
+.search-container {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#search-input {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+/* Existing styles */
+#scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#scrollToTopButton.show {
+  opacity: 1;
+}
+
+.book-more-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #dfdfdf;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.book-more-button:hover {
+  background-color: #979797;
+}
